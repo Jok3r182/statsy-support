@@ -1,34 +1,21 @@
 $
-Privacy Policy
-Statsy · last updated 16 October 2026
-The short version: Statsy shows your own app statistics by talking directly to Google and Apple from your iPhone. Your sign-in tokens and API keys stay in your iPhone's Keychain. There is no Statsy account and no Statsy server. Statsy uses Firebase Analytics to understand how the app itself is used.
-What Statsy reads, and from where
-When you connect your accounts, Statsy requests your own data directly from:
-	•	Google Analytics for Firebase: active and total users for your apps (read-only access).
-	•	AdMob: estimated earnings per app (read-only access).
-	•	App Store Connect: Sales and Trends reports, using the API key you provide.
-These figures are shown on your device and cached there so the app opens quickly. They are never sent to me or to anyone else.
-Your credentials
-Your Google sign-in tokens, OAuth client ID and App Store Connect key (issuer ID, key ID, vendor number and private key) are stored in the iPhone Keychain, available only on this device and never synced to iCloud. Signing out deletes them together with the cached dashboard.
-Other requests Statsy makes
-	•	Apple's iTunes lookup, to fetch your apps' public names and icons by bundle ID.
-	•	frankfurter.app, to fetch public currency exchange rates. No personal information is sent.
-Analytics about Statsy itself
-Statsy uses Google's Firebase Analytics to collect anonymous usage data about the app, such as screens opened and app version, together with an app instance identifier. This is not linked to your identity, is not used for advertising, and does not include any of your statistics, earnings or keys. Google's handling of this data is covered by the Google Privacy Policy.
-Purchases
-Statsy Pro is bought through the App Store. Apple processes the payment; Statsy only learns whether Pro is unlocked.
-Notifications
-If you allow notifications, Statsy checks your accounts in the background and posts local notifications on your device. Nothing is sent through a Statsy server.
-What Statsy does not do
-	•	No account, email address or password for Statsy.
-	•	No advertising, no advertising identifiers, no tracking across apps or websites.
-	•	Nothing is sold or shared.
-Deleting your data
-Sign out in Statsy to remove your credentials and cached data, or delete the app. You can also revoke Statsy's Google access at myaccount.google.com/permissions and revoke your API key in App Store Connect.
-Children
-Statsy is a tool for app developers and is not directed at children under 13.
-Changes
-If this policy changes, the updated version will appear on this page with a new date.
-Contact
-Questions about privacy: matthewproductions182@gmail.com
+Statsy Support
+Help with connecting your accounts, Statsy Pro and notifications.
+Need help or found a bug? Email matthewproductions182@gmail.com and include your iPhone model and iOS version.
+What do I need to connect?
+Either a Google account with Google Analytics for Firebase and AdMob, or an App Store Connect API key. One is enough; connect both to see users and all earnings.
+How do I create an App Store Connect API key?
+In App Store Connect open Users and Access, then Integrations, then App Store Connect API. Create a key with Sales access (Finance or Admin role), download the .p8 file, and paste the Issuer ID, Key ID, your vendor number (Payments and Financial Reports) and the key into Statsy.
+Why is Google sign-in blocked?
+Statsy uses your own Google Cloud OAuth client. Create an iOS client for bundle ID lt.matas.statsy, enable the Google Analytics Admin, Analytics Data and AdMob APIs, and add your Google account as a test user on the OAuth consent screen. The in-app steps walk you through it.
+Why does App Store show yesterday?
+Apple publishes sales reports a day late. Statsy shows the latest reported day together with its date.
+Why are some apps missing from the totals?
+Apps switched off in Choose Apps leave the list and every total. On the free plan Statsy tracks your top 2 apps by all-time earnings; Statsy Pro shows every app.
+How do I restore Statsy Pro?
+Open the Statsy Pro screen and tap Restore Purchase, signed in with the same Apple Account you bought it with. Family Sharing is supported.
+Notifications don't arrive
+Check that notifications are allowed for Statsy in iOS Settings and that Background App Refresh is on. iOS decides when background checks run, usually a few times a day.
+Where are my keys stored?
+Only in your iPhone's Keychain. There is no Statsy server. See the privacy policy.
 © 2026 Matthew Productions
